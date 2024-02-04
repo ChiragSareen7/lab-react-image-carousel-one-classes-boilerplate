@@ -1,15 +1,17 @@
-import React, { Component } from "react";
-import Carousel from "./components/Carousel";
-import "./App.css";
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import Carousel from './components/Carousel'
 
+function App() {
+  const [count, setCount] = useState(0)
 
-
-export default class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Carousel />
-      </div>
-    );
-  }
+  return (
+<div>
+  <Carousel />
+</div>
+  )
 }
+
+export default App
